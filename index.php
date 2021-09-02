@@ -10,7 +10,7 @@ $Ciccio = new User ('Ciccio','Rossi','Via Gatti 10, Milano');
 $Ciccio->setDiscount(30);
 
 $Priscilla = new GoldenUser ('Priscilla', 'Verdi', 'Via Panda 20, Milano');
-$Priscilla->setGoldenDiscount('30%');
+$Priscilla->setGoldenDiscount(2);
 
 
 ?>
@@ -45,7 +45,6 @@ $Priscilla->setGoldenDiscount('30%');
         <?php echo $Ciccio->getDiscount() . '%';
         ?>
     </p>
-
     <hr>
     <p>
         Nome cliente: 
@@ -54,7 +53,7 @@ $Priscilla->setGoldenDiscount('30%');
     </p>
     <p>
         Sconto: 
-        <?php echo $Priscilla->setGoldenDiscount() . '%';
+        <?php echo $Priscilla->getGoldenDiscount() . '%';
         ?>
     </p>
     
